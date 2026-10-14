@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Experience Tracker</title>
+</head>
+<body>
+  <header>
+    <h1>Experience Tracker</h1>
+    <p>Keep track of things you have learned and done.</p>
+  </header>
+
+  <main>
+    <section aria-labelledby="add-experience-heading">
+      <h2 id="add-experience-heading">Add an experience</h2>
+
+      <form id="experience-form">
+        <label for="experience-title">What did you do?</label>
+        <input id="experience-title" name="title" type="text" required>
+
+        <label for="experience-notes">Notes</label>
+        <textarea id="experience-notes" name="notes" rows="4"></textarea>
+
+        <button type="submit">Add experience</button>
+      </form>
+    </section>
+
+    <section aria-labelledby="experience-list-heading">
+      <h2 id="experience-list-heading">My experiences</h2>
+      <ul id="experience-list">
+        <li>Your experiences will appear here.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>

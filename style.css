@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f4f6f2;
+  color: #24312b;
+  font-family: "Segoe UI", sans-serif;
+  line-height: 1.5;
+}
+
+header {
+  padding: 2rem 1.25rem;
+  background: #1f5a45;
+  color: #ffffff;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-family: Georgia, serif;
+  font-size: 2.25rem;
+}
+
+header p {
+  margin: 0.5rem 0 0;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+  width: min(900px, calc(100% - 2rem));
+  margin: 2rem auto;
+}
+
+section {
+  padding: 1.5rem;
+  border: 1px solid #d9e1da;
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 1.25rem;
+}
+
+form {
+  display: grid;
+  gap: 0.75rem;
+}
+
+input,
+textarea,
+button {
+  width: 100%;
+  padding: 0.7rem;
+  border: 1px solid #aab8ad;
+  border-radius: 5px;
+  font: inherit;
+}
+
+input:focus,
+textarea:focus {
+  outline: 2px solid #d28b35;
+  outline-offset: 2px;
+}
+
+button {
+  border-color: #1f5a45;
+  background: #1f5a45;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #174633;
+}
+
+#experience-list {
+  padding-left: 1.25rem;
+}
+
+@media (max-width: 600px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+}
